@@ -1,0 +1,10 @@
+boto3
+opencv-python-headless
+pillow
+facenet-pytorch==2.5.3
+imutils
+numpy==1.23.5
+torch==1.13.1+cpu
+torchvision==0.14.1+cpu
+-f https://download.pytorch.org/whl/torch_stable.html
+
