@@ -1,4 +1,4 @@
-# 🎥 Serverless Video Face Recognition Pipeline on AWS
+#  Serverless Facial Recognition Pipeline on AWS
 
 ![AWS](https://img.shields.io/badge/AWS-Lambda-orange)
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
@@ -14,7 +14,7 @@ The system uses an **event-driven architecture built with AWS Lambda, Amazon S3,
 
 ---
 
-# 🚀 Key Features
+#  Key Features
 
 * Serverless **event-driven architecture**
 * **Automatic video processing pipeline**
@@ -25,7 +25,7 @@ The system uses an **event-driven architecture built with AWS Lambda, Amazon S3,
 
 ---
 
-# 🏗 Architecture Overview
+#  Architecture Overview
 
 The application is implemented as a **multi-stage serverless pipeline**.
 
@@ -45,9 +45,9 @@ This architecture allows the system to **scale automatically with incoming workl
 
 ---
 
-# 📊 Pipeline Workflow
+#  Pipeline Workflow
 
-### 1️⃣ Video Upload
+###  Video Upload
 
 Users upload `.mp4` videos to the **Input S3 Bucket**.
 
@@ -59,7 +59,7 @@ Each upload automatically triggers the **Video Splitting Lambda function**.
 
 ---
 
-### 2️⃣ Video Splitting Lambda
+###  Video Splitting Lambda
 
 Responsibilities:
 
@@ -81,7 +81,7 @@ test_01.mp4 → test_01.jpg
 
 ---
 
-### 3️⃣ Face Recognition Lambda (Docker)
+###  Face Recognition Lambda (Docker)
 
 The second Lambda is deployed using **Docker containers** to package machine learning dependencies.
 
@@ -102,7 +102,7 @@ test_01.jpg → test_01.txt
 
 ---
 
-# 🧠 Machine Learning Pipeline
+#  Machine Learning Pipeline
 
 ### Face Detection
 
@@ -136,7 +136,7 @@ The smallest distance determines the predicted identity.
 
 ---
 
-# 🗂 S3 Storage Layout
+#  S3 Storage Layout
 
 | Bucket             | Purpose                    |
 | ------------------ | -------------------------- |
@@ -159,7 +159,7 @@ Output bucket
 
 ---
 
-# 📁 Repository Structure
+#  Repository Structure
 
 ```
 facial-recognition-aws/
@@ -180,7 +180,7 @@ facial-recognition-aws/
 
 ---
 
-# 🐳 Docker Deployment
+#  Docker Deployment
 
 The **face recognition Lambda** is deployed using Docker to package heavy ML libraries.
 
@@ -203,7 +203,7 @@ Using Docker avoids Lambda size limitations and ensures **consistent runtime env
 
 ---
 
-# ⚙️ System Design
+#  System Design
 
 The system follows a **serverless event-driven architecture** optimized for scalability and reliability.
 
@@ -239,7 +239,7 @@ Using **Docker containers for Lambda** ensures:
 
 ---
 
-# 📈 Scalability
+#  Scalability
 
 The architecture supports **massively parallel processing**.
 
@@ -257,7 +257,7 @@ AWS automatically scales Lambda instances based on demand.
 
 ---
 
-# ⚡ Performance
+#  Performance
 
 The system was tested using an automated **100-video workload generator**.
 
